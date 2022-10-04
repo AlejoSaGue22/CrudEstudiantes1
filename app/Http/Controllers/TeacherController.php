@@ -68,10 +68,11 @@ class TeacherController extends Controller
      * @param  \App\Models\Teacher  $teacher
      * @return \Illuminate\Http\Response
      */
-    public function edit(Teacher $teacher)
+    public function edit($id)
     {
-        return view('client.formTea')
-            ->with('teachers', $teacher);   
+        $teacher=Teacher::findOrFail($id);
+        return view('client.formTea');
+             
     }
 
     /**

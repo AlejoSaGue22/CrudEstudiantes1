@@ -29,9 +29,9 @@
                 <td> 
                     <a href="{{ route('Teacher.edit', $detail)}}" class="btn btn-warning">Editar</a>
 
-                    <form action= "{{ route('Teacher.destroy', $detail)}}" method="POST" class="d-inline">
-                        @method('DELETE')
+                    <form action= "{{ route('Teacher.destroy',$detail)}}" method="POST" class="d-inline">
                         @csrf
+                        @method('DELETE')
                         <button type="submit" class="btn btn-danger" onclick="return confirm ('¿Deseas Eliminar el dato?')">Eliminar</button>
                     </form>
                 </td>

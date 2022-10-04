@@ -30,7 +30,7 @@
                     <form action= "{{ route('client.destroy', $detail)}}" method="POST" class="d-inline">
                         @method('DELETE')
                         @csrf
-                        <button type="submit" class="btn btn-danger" onclick="return confirm ('¿Deseas Eliminar el dato?')">Eliminar</button>
+                        <button type="submit" class="btn btn-danger" onclick="return confirm ('¿Deseas Eliminar el dato?')" >Eliminar</button>
                     </form>
                 </td>
             </tr>
