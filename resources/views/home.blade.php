@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Ya te encuentras logeado!') }}
+                    <a href="{{ route('client.index') }}" class= "btn btn-primary">LISTA DE ESTUDIANTES</a>
+
                 </div>
             </div>
         </div>

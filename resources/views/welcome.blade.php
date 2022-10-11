@@ -2,8 +2,8 @@
 @section('content')
 
 <div class="container py-5 text-center">
-    <h1>  VINCULACION </h1>
-    <a href="{{ route('client.index') }}" class= "btn btn-primary">LISTA DE ESTUDIANTES</a>
+    <h1>  SOFTWARE ACADEMICO </h1>
+    <a href="{{ route('client.index') }}" class= "btn btn-primary" text-align="center">LISTA DE ESTUDIANTES</a>
     <a href="{{ route('client.create') }}" class= "btn btn-primary">AGREGAR ESTUDIANTES</a> 
 
   
